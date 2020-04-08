@@ -3,18 +3,18 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "emelitepickaxe",
+    "texture": "emelitesword",
     "customModelName": "Normal",
-    "name": "Emelite Pickaxe",
+    "name": "Emelite Sword",
     "creativeTab": {
       "value": "TOOLS"
     },
-    "toolType": "Pickaxe",
+    "toolType": "Sword",
     "harvestLevel": 4,
     "efficiency": 4.0,
-    "attackSpeed": 1.0,
+    "attackSpeed": 1.9000000000000001,
     "enchantability": 2,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 17.700000000000003,
     "usageCount": 6900,
     "blocksAffected": [],
     "hasGlow": false,

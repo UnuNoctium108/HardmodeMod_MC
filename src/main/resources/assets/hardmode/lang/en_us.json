@@ -2,5 +2,12 @@
   "block.hardmode.emeliteore": "Emelite Ore",
   "item.hardmode.emelitegem": "Emelite Gem",
   "block.hardmode.misteriousrock": "Misterious Rock",
-  "item.hardmode.emelitepickaxe": "Emelite Pickaxe"
+  "item.hardmode.emelitepickaxe": "Emelite Pickaxe",
+  "item.hardmode.emeliteaxe": "Emelite Axe",
+  "item.minecraft.lingering_potion.effect.emelitepotion": "Lingering Potion of Emelite",
+  "item.hardmode.emelitesword": "Emelite Sword",
+  "item.minecraft.splash_potion.effect.emelitepotion": "Splash Potion of Emelite",
+  "item.minecraft.tipped_arrow.effect.emelitepotion": "Arrow of Potion of Emelite",
+  "item.minecraft.potion.effect.emelitepotion": "Potion of Emelite",
+  "effect.emelitepotion": "Emeliting"
 }

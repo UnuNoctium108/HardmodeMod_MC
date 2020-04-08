@@ -62,7 +62,7 @@ public class MisteriousRockBlock extends HardmodeElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(2)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(-1, 3600000).lightValue(0).harvestLevel(74)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("misteriousrock");
 		}

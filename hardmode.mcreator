@@ -201,6 +201,62 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "EmeliteAxe",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EmeliteSword",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EmelitePotionPotionStartedapplied",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmelitePotionPotionExpires",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmelitePotion",
+      "type": "potion",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -217,7 +273,14 @@
       "block.hardmode.emeliteore": "Emelite Ore",
       "item.hardmode.emelitegem": "Emelite Gem",
       "block.hardmode.misteriousrock": "Misterious Rock",
-      "item.hardmode.emelitepickaxe": "Emelite Pickaxe"
+      "item.hardmode.emelitepickaxe": "Emelite Pickaxe",
+      "item.hardmode.emeliteaxe": "Emelite Axe",
+      "item.minecraft.lingering_potion.effect.emelitepotion": "Lingering Potion of Emelite",
+      "item.hardmode.emelitesword": "Emelite Sword",
+      "item.minecraft.splash_potion.effect.emelitepotion": "Splash Potion of Emelite",
+      "item.minecraft.tipped_arrow.effect.emelitepotion": "Arrow of Potion of Emelite",
+      "item.minecraft.potion.effect.emelitepotion": "Potion of Emelite",
+      "effect.emelitepotion": "Emeliting"
     }
   },
   "workspaceSettings": {

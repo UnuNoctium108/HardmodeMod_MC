@@ -6,7 +6,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -18,16 +18,16 @@ import net.mcreator.hardmode.procedures.EmelitePickaxeBlockDestroyedWithToolProc
 import net.mcreator.hardmode.HardmodeElements;
 
 @HardmodeElements.ModElement.Tag
-public class EmelitePickaxeItem extends HardmodeElements.ModElement {
-	@ObjectHolder("hardmode:emelitepickaxe")
+public class EmeliteSwordItem extends HardmodeElements.ModElement {
+	@ObjectHolder("hardmode:emelitesword")
 	public static final Item block = null;
-	public EmelitePickaxeItem(HardmodeElements instance) {
-		super(instance, 11);
+	public EmeliteSwordItem(HardmodeElements instance) {
+		super(instance, 13);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new PickaxeItem(new IItemTier() {
+		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
 				return 6900;
 			}
@@ -37,7 +37,7 @@ public class EmelitePickaxeItem extends HardmodeElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 2f;
+				return 15.700000000000003f;
 			}
 
 			public int getHarvestLevel() {
@@ -51,7 +51,7 @@ public class EmelitePickaxeItem extends HardmodeElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 3, -2.0999999999999999f, new Item.Properties().group(ItemGroup.TOOLS)) {
 			@Override
 			public boolean onBlockDestroyed(ItemStack itemstack, World world, BlockState bl, BlockPos pos, LivingEntity entity) {
 				boolean retval = super.onBlockDestroyed(itemstack, world, bl, pos, entity);
@@ -86,6 +86,6 @@ public class EmelitePickaxeItem extends HardmodeElements.ModElement {
 				}
 				return retval;
 			}
-		}.setRegistryName("emelitepickaxe"));
+		}.setRegistryName("emelitesword"));
 	}
 }

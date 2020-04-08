@@ -3,13 +3,13 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "emelitepickaxe",
+    "texture": "emeliteaxe",
     "customModelName": "Normal",
-    "name": "Emelite Pickaxe",
+    "name": "Emelite Axe",
     "creativeTab": {
       "value": "TOOLS"
     },
-    "toolType": "Pickaxe",
+    "toolType": "Axe",
     "harvestLevel": 4,
     "efficiency": 4.0,
     "attackSpeed": 1.0,

@@ -6,11 +6,11 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
+import net.minecraft.item.AxeItem;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.BlockState;
 
@@ -18,16 +18,16 @@ import net.mcreator.hardmode.procedures.EmelitePickaxeBlockDestroyedWithToolProc
 import net.mcreator.hardmode.HardmodeElements;
 
 @HardmodeElements.ModElement.Tag
-public class EmelitePickaxeItem extends HardmodeElements.ModElement {
-	@ObjectHolder("hardmode:emelitepickaxe")
+public class EmeliteAxeItem extends HardmodeElements.ModElement {
+	@ObjectHolder("hardmode:emeliteaxe")
 	public static final Item block = null;
-	public EmelitePickaxeItem(HardmodeElements instance) {
-		super(instance, 11);
+	public EmeliteAxeItem(HardmodeElements instance) {
+		super(instance, 12);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new PickaxeItem(new IItemTier() {
+		elements.items.add(() -> new AxeItem(new IItemTier() {
 			public int getMaxUses() {
 				return 6900;
 			}
@@ -86,6 +86,6 @@ public class EmelitePickaxeItem extends HardmodeElements.ModElement {
 				}
 				return retval;
 			}
-		}.setRegistryName("emelitepickaxe"));
+		}.setRegistryName("emeliteaxe"));
 	}
 }

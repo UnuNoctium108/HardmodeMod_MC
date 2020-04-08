@@ -1,0 +1,30 @@
+{
+  "_fv": 6,
+  "_type": "potion",
+  "definition": {
+    "name": "Potion of Emelite",
+    "effectName": "Emeliting",
+    "icon": "reamer_houl.png",
+    "color": {
+      "value": -3681025,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "curativeItems": [
+      {
+        "value": "Items.MILK_BUCKET"
+      }
+    ],
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "EmelitePotionPotionStartedapplied"
+    },
+    "onExpired": {
+      "name": "EmelitePotionPotionExpires"
+    }
+  }
+}
