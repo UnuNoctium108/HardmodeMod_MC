@@ -54,6 +54,7 @@ public class HardmodeVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "hardmode_mapvars";
+		public boolean IsHardmode = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -64,10 +65,12 @@ public class HardmodeVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			IsHardmode = nbt.getBoolean("IsHardmode");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putBoolean("IsHardmode", IsHardmode);
 			return nbt;
 		}
 
