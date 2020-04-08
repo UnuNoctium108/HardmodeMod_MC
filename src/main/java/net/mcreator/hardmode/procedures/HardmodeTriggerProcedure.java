@@ -5,7 +5,9 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
-import net.minecraft.entity.boss.dragon.EnderDragonEntity;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.hardmode.HardmodeElements;
@@ -28,12 +30,15 @@ public class HardmodeTriggerProcedure extends HardmodeElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		World world = (World) dependencies.get("world");
-		if ((entity instanceof EnderDragonEntity)) {
+		if ((entity instanceof WitherEntity)) {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("world", world);
 				HardmodeCommandExecutedProcedure.executeProcedure($_dependencies);
+			}
+			if (entity instanceof PlayerEntity && !world.isRemote) {
+				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("The evil and darkness are rising..."), (false));
 			}
 		}
 	}
