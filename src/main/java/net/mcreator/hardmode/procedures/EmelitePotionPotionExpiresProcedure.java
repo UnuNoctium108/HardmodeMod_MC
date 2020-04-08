@@ -18,7 +18,9 @@ public class EmelitePotionPotionExpiresProcedure extends HardmodeElements.ModEle
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof PlayerEntity) {
-			((PlayerEntity) entity).abilities.allowFlying = (false);
+			((PlayerEntity) entity).abilities.allowFlying = ((entity instanceof PlayerEntity)
+					? ((PlayerEntity) entity).abilities.isCreativeMode
+					: false);
 			((PlayerEntity) entity).sendPlayerAbilities();
 		}
 	}
