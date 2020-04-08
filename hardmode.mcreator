@@ -165,6 +165,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "EmelitePickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmelitePickaxe",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -180,7 +216,8 @@
     "en_us": {
       "block.hardmode.emeliteore": "Emelite Ore",
       "item.hardmode.emelitegem": "Emelite Gem",
-      "block.hardmode.misteriousrock": "Misterious Rock"
+      "block.hardmode.misteriousrock": "Misterious Rock",
+      "item.hardmode.emelitepickaxe": "Emelite Pickaxe"
     }
   },
   "workspaceSettings": {

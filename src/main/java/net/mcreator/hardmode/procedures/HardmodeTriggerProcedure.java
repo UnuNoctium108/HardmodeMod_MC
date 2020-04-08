@@ -38,7 +38,7 @@ public class HardmodeTriggerProcedure extends HardmodeElements.ModElement {
 				HardmodeCommandExecutedProcedure.executeProcedure($_dependencies);
 			}
 			if (entity instanceof PlayerEntity && !world.isRemote) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("The evil and darkness are rising..."), (false));
+				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("The evil and darkness are rising..."), (true));
 			}
 		}
 	}
