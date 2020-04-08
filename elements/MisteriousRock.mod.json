@@ -77,7 +77,31 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
+    "onRightClicked": {
+      "name": "MisteriousRockUpdateTick"
+    },
+    "onBlockAdded": {
+      "name": "MisteriousRockUpdateTick"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "MisteriousRockUpdateTick"
+    },
     "onTickUpdate": {
+      "name": "MisteriousRockUpdateTick"
+    },
+    "onRandomUpdateEvent": {
+      "name": "MisteriousRockUpdateTick"
+    },
+    "onStartToDestroy": {
+      "name": "MisteriousRockUpdateTick"
+    },
+    "onEntityWalksOn": {
+      "name": "MisteriousRockUpdateTick"
+    },
+    "onRedstoneOn": {
+      "name": "MisteriousRockUpdateTick"
+    },
+    "onRedstoneOff": {
       "name": "MisteriousRockUpdateTick"
     },
     "spawnWorldTypes": [
