@@ -1,12 +1,13 @@
 package net.mcreator.hardmode.procedures;
 
+import net.minecraftforge.fml.server.ServerLifecycleHooks;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.Entity;
 
@@ -37,8 +38,10 @@ public class HardmodeTriggerProcedure extends HardmodeElements.ModElement {
 				$_dependencies.put("world", world);
 				HardmodeCommandExecutedProcedure.executeProcedure($_dependencies);
 			}
-			if (entity instanceof PlayerEntity && !world.isRemote) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("The evil and darkness are rising..."), (true));
+			{
+				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
+				if (mcserv != null)
+					mcserv.getPlayerList().sendMessage(new StringTextComponent("The evil and darkness are rising..."));
 			}
 		}
 	}
