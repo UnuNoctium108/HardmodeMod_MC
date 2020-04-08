@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hardmode:blocks/misteriousrock_top_bottom",
+    "up": "hardmode:blocks/misteriousrock_top_bottom",
+    "north": "hardmode:blocks/misteriousrock_side",
+    "east": "hardmode:blocks/misteriousrock_side",
+    "south": "hardmode:blocks/misteriousrock_side",
+    "west": "hardmode:blocks/misteriousrock_side",
+    "particle": "hardmode:blocks/misteriousrock_top_bottom"
+  }
+}

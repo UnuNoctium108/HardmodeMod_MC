@@ -1,0 +1,38 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "MisteriousRock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.hardmode.misteriousrock": "Misterious Rock"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "hardmode",
+    "modName": "Hardmode",
+    "version": "1.0.0",
+    "author": "Kis Keve, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "1.14.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.hardmode",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000214217
+}
