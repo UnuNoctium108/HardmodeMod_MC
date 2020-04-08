@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hardmode:blocks/letoltes",
+    "up": "hardmode:blocks/letoltes",
+    "north": "hardmode:blocks/letoltes",
+    "east": "hardmode:blocks/letoltes",
+    "south": "hardmode:blocks/letoltes",
+    "west": "hardmode:blocks/letoltes",
+    "particle": "hardmode:blocks/letoltes"
+  }
+}
