@@ -23,5 +23,11 @@ public class EmelitePotionPotionExpiresProcedure extends HardmodeElements.ModEle
 					: false);
 			((PlayerEntity) entity).sendPlayerAbilities();
 		}
+		if (entity instanceof PlayerEntity) {
+			((PlayerEntity) entity).abilities.isFlying = ((entity instanceof PlayerEntity)
+					? ((PlayerEntity) entity).abilities.isCreativeMode
+					: false);
+			((PlayerEntity) entity).sendPlayerAbilities();
+		}
 	}
 }
