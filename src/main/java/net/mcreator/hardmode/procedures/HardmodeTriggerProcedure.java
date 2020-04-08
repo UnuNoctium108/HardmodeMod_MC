@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.hardmode.HardmodeVariables;
 import net.mcreator.hardmode.HardmodeElements;
 
 @HardmodeElements.ModElement.Tag
@@ -30,8 +29,12 @@ public class HardmodeTriggerProcedure extends HardmodeElements.ModElement {
 		Entity entity = (Entity) dependencies.get("entity");
 		World world = (World) dependencies.get("world");
 		if ((entity instanceof EnderDragonEntity)) {
-			HardmodeVariables.MapVariables.get(world).IsHardmode = (boolean) (true);
-			HardmodeVariables.MapVariables.get(world).syncData(world);
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
+				HardmodeCommandExecutedProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 
