@@ -36,9 +36,12 @@ public class MisteriousRockUpdateTickProcedure extends HardmodeElements.ModEleme
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		if (((HardmodeVariables.MapVariables.get(world).IsHardmode) == (true))) {
-			if (((1 * Math.random()) == 0)) {
+			if ((((2 * Math.random()) == 0) && ((2 * Math.random()) == 0))) {
+				world.notifyNeighborsOfStateChange(new BlockPos((int) x, (int) y, (int) z),
+						world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlock());
+			} else if ((((2 * Math.random()) > 0) && ((2 * Math.random()) <= 1))) {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), EmeliteOreBlock.block.getDefaultState(), 3);
-			} else if ((((1 * Math.random()) > 0) && ((1 * Math.random()) <= 1))) {
+			} else if ((((2 * Math.random()) > 1) && ((2 * Math.random()) <= 2))) {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), AniteOreBlock.block.getDefaultState(), 3);
 			}
 		}
