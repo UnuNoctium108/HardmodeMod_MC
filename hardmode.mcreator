@@ -297,6 +297,88 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "AniteGem",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AniteOre",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AnitePickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AnitePickaxe",
+      "type": "tool",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AniteAxe",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AniteSword",
+      "type": "tool",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Anite",
+      "type": "armor",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
     }
   ],
   "variable_elements": [
@@ -310,17 +392,26 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.hardmode.anitesword": "Anite Sword",
+      "item.hardmode.anitepickaxe": "Anite Pickaxe",
+      "item.minecraft.lingering_potion.effect.emelitepotion": "Lingering Potion of Emelite",
+      "item.hardmode.emelitesword": "Emelite Sword",
+      "item.minecraft.splash_potion.effect.emelitepotion": "Splash Potion of Emelite",
+      "item.hardmode.aniteaxe": "Anite Axe",
+      "item.hardmode.anitegem": "Anite Gem",
+      "item.minecraft.potion.effect.emelitepotion": "Potion of Emelite",
       "block.hardmode.emeliteore": "Emelite Ore",
       "item.hardmode.emelitegem": "Emelite",
       "block.hardmode.misteriousrock": "Misterious Rock",
       "item.hardmode.emelitepickaxe": "Emelite Pickaxe",
       "item.hardmode.emeliteaxe": "Emelite Axe",
-      "item.minecraft.lingering_potion.effect.emelitepotion": "Lingering Potion of Emelite",
-      "item.hardmode.emelitesword": "Emelite Sword",
-      "item.minecraft.splash_potion.effect.emelitepotion": "Splash Potion of Emelite",
+      "item.hardmode.anitelegs": "Anite Leggings",
+      "block.hardmode.aniteore": "Anite Ore",
+      "item.hardmode.anitehelmet": "Anite Helmet",
       "item.minecraft.tipped_arrow.effect.emelitepotion": "Arrow of Potion of Emelite",
-      "item.minecraft.potion.effect.emelitepotion": "Potion of Emelite",
-      "effect.emelitepotion": "Emeliting"
+      "item.hardmode.aniteboots": "Anite Boots",
+      "effect.emelitepotion": "Emeliting",
+      "item.hardmode.anitebody": "Anite Body"
     }
   },
   "workspaceSettings": {

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hardmode:blocks/aniteore",
+    "up": "hardmode:blocks/aniteore",
+    "north": "hardmode:blocks/aniteore",
+    "east": "hardmode:blocks/aniteore",
+    "south": "hardmode:blocks/aniteore",
+    "west": "hardmode:blocks/aniteore",
+    "particle": "hardmode:blocks/aniteore"
+  }
+}

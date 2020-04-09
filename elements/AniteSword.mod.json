@@ -1,0 +1,23 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "anitesword",
+    "customModelName": "Normal",
+    "name": "Anite Sword",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 5,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 26.0,
+    "usageCount": 7436,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": []
+  }
+}

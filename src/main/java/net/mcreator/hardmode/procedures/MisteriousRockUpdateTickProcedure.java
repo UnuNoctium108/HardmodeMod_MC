@@ -4,6 +4,7 @@ import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 
 import net.mcreator.hardmode.block.EmeliteOreBlock;
+import net.mcreator.hardmode.block.AniteOreBlock;
 import net.mcreator.hardmode.HardmodeVariables;
 import net.mcreator.hardmode.HardmodeElements;
 
@@ -37,6 +38,8 @@ public class MisteriousRockUpdateTickProcedure extends HardmodeElements.ModEleme
 		if (((HardmodeVariables.MapVariables.get(world).IsHardmode) == (true))) {
 			if (((0 * Math.random()) == 0)) {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), EmeliteOreBlock.block.getDefaultState(), 3);
+			} else if (((0 * Math.random()) == 1)) {
+				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), AniteOreBlock.block.getDefaultState(), 3);
 			}
 		}
 	}
