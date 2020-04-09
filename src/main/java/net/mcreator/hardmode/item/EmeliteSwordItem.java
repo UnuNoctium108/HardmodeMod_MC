@@ -49,7 +49,7 @@ public class EmeliteSwordItem extends HardmodeElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(EmeliteGemItem.block, (int) (1)));
 			}
 		}, 3, -2.0999999999999999f, new Item.Properties().group(ItemGroup.TOOLS)) {
 			@Override

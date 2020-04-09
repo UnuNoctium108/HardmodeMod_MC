@@ -18,7 +18,11 @@
     "usageCount": 6900,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:EmeliteGem"
+      }
+    ],
     "onEntityHitWith": {
       "name": "EmelitePickaxeBlockDestroyedWithTool"
     },
