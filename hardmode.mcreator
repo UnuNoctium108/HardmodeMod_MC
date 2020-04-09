@@ -273,6 +273,30 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "EmeliteSwordRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EmeliteAxeRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EmelitePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -287,7 +311,7 @@
   "language_map": {
     "en_us": {
       "block.hardmode.emeliteore": "Emelite Ore",
-      "item.hardmode.emelitegem": "Emelite Gem",
+      "item.hardmode.emelitegem": "Emelite",
       "block.hardmode.misteriousrock": "Misterious Rock",
       "item.hardmode.emelitepickaxe": "Emelite Pickaxe",
       "item.hardmode.emeliteaxe": "Emelite Axe",

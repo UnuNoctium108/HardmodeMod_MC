@@ -1,0 +1,19 @@
+{
+  "group": "hardmode",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "hardmode:emelitegem"
+    },
+    {
+      "item": "hardmode:emelitegem"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "hardmode:emelitesword",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "hardmode",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "hardmode:emelitegem"
+    },
+    "1": {
+      "item": "hardmode:emelitegem"
+    },
+    "2": {
+      "item": "hardmode:emelitegem"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "hardmode:emelitepickaxe",
+    "count": 1
+  }
+}

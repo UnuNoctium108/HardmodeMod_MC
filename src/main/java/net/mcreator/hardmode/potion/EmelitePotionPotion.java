@@ -56,7 +56,7 @@ public class EmelitePotionPotion extends HardmodeElements.ModElement {
 		public EffectCustom() {
 			super(EffectType.BENEFICIAL, -3681025);
 			setRegistryName("emelitepotion");
-			potionIcon = new ResourceLocation("hardmode:textures/reamer_houl.png");
+			potionIcon = new ResourceLocation("hardmode:textures/ngelwings.png");
 		}
 
 		@Override
