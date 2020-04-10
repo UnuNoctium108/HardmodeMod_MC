@@ -2,9 +2,10 @@ package net.mcreator.hardmode.procedures;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemStack;
 import net.minecraft.block.Block;
 
+import net.mcreator.hardmode.item.BriteShovelItem;
 import net.mcreator.hardmode.HardmodeElements;
 
 @HardmodeElements.ModElement.Tag
@@ -41,15 +42,8 @@ public class BriteShovelRightClickedOnBlockProcedure extends HardmodeElements.Mo
 		xC = (double) (x + (Math.round((2 * Math.random())) - 1));
 		yC = (double) (y + (Math.round((2 * Math.random())) - 1));
 		zC = (double) (z + (Math.round((2 * Math.random())) - 1));
-		while (((!((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.AIR)) && (((world
-				.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.EARTH)
-				&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.ORGANIC) && (((world
-						.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.PLANTS)
-						&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.TALL_PLANTS)
-								&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.SAND)
-										&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.SNOW)
-												&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC))))
-														.getMaterial() == Material.CLAY) && ((tries) <= 128)))))))))) {
+		while (((!(new ItemStack(BriteShovelItem.block, (int) (1)).getItem()
+				.canHarvestBlock((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC))))))) && ((tries) <= 256))) {
 			xC = (double) (x + (Math.round((2 * Math.random())) - 1));
 			yC = (double) (y + (Math.round((2 * Math.random())) - 1));
 			zC = (double) (z + (Math.round((2 * Math.random())) - 1));
