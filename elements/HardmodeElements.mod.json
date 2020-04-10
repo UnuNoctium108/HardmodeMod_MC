@@ -1,0 +1,64 @@
+{
+  "_fv": 6,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:MisteriousRock"
+      },
+      {
+        "value": "CUSTOM:EmeliteOre"
+      },
+      {
+        "value": "CUSTOM:EmeliteGem"
+      },
+      {
+        "value": "CUSTOM:EmelitePickaxe"
+      },
+      {
+        "value": "CUSTOM:EmeliteAxe"
+      },
+      {
+        "value": "CUSTOM:EmeliteSword"
+      },
+      {
+        "value": "CUSTOM:AniteGem"
+      },
+      {
+        "value": "CUSTOM:AniteOre"
+      },
+      {
+        "value": "CUSTOM:AnitePickaxe"
+      },
+      {
+        "value": "CUSTOM:AniteAxe"
+      },
+      {
+        "value": "CUSTOM:AniteSword"
+      },
+      {
+        "value": "CUSTOM:Anite.helmet"
+      },
+      {
+        "value": "CUSTOM:BriteGem"
+      },
+      {
+        "value": "CUSTOM:BriteOre"
+      },
+      {
+        "value": "CUSTOM:Brite.boots"
+      },
+      {
+        "value": "CUSTOM:BriteShovel"
+      },
+      {
+        "value": "CUSTOM:BriteHoe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "hardmodeelements",
+    "namespace": "forge"
+  }
+}

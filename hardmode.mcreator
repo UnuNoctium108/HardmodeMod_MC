@@ -111,14 +111,6 @@
       }
     },
     {
-      "name": "HardmodeQuery",
-      "type": "command",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "HardmodeDisableCommandExecuted",
       "type": "procedure",
       "sortid": 9,
@@ -139,14 +131,6 @@
       }
     },
     {
-      "name": "HardmodeDisable",
-      "type": "command",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "HardmodeCommandExecuted",
       "type": "procedure",
       "sortid": 10,
@@ -156,8 +140,20 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
           },
           {
             "name": "world",
@@ -477,6 +473,106 @@
           }
         ]
       }
+    },
+    {
+      "name": "AniteHelmetRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BriteBootsRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AniteHelmetRecipeAltered",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BriteBootsRecipeAltered",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BriteShovelRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BriteShovel",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BriteShovelRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BriteHoe",
+      "type": "tool",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BriteHoeRecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HardmodeElements",
+      "type": "tag",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -514,7 +610,9 @@
       "item.hardmode.emelitepickaxe": "Emelite Pickaxe",
       "item.hardmode.emeliteaxe": "Emelite Axe",
       "item.hardmode.anitelegs": "Anite Leggings",
+      "item.hardmode.britehoe": "Brite Hoe",
       "block.hardmode.aniteore": "Anite Ore",
+      "item.hardmode.briteshovel": "Brite Shovel",
       "item.hardmode.anitebody": "Anite Body"
     }
   },

@@ -1,0 +1,30 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "briteshovel",
+    "customModelName": "Normal",
+    "name": "Brite Shovel",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 5,
+    "efficiency": 6.5,
+    "attackSpeed": 0.4,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 8800,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BriteGem"
+      }
+    ],
+    "onRightClickedOnBlock": {
+      "name": "BriteShovelRightClickedOnBlock"
+    }
+  }
+}

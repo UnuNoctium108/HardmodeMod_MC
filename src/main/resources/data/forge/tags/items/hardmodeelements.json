@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "hardmode:misteriousrock",
+    "hardmode:emeliteore",
+    "hardmode:emelitegem",
+    "hardmode:emelitepickaxe",
+    "hardmode:emeliteaxe",
+    "hardmode:emelitesword",
+    "hardmode:anitegem",
+    "hardmode:aniteore",
+    "hardmode:anitepickaxe",
+    "hardmode:aniteaxe",
+    "hardmode:anitesword",
+    "hardmode:anitehelmet",
+    "hardmode:britegem",
+    "hardmode:briteore",
+    "hardmode:briteboots",
+    "hardmode:briteshovel",
+    "hardmode:britehoe"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "group": "hardmode",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "hardmode:britegem"
+    },
+    "2": {
+      "item": "hardmode:britegem"
+    },
+    "3": {
+      "item": "hardmode:britegem"
+    },
+    "5": {
+      "item": "hardmode:britegem"
+    }
+  },
+  "result": {
+    "item": "hardmode:briteboots",
+    "count": 1
+  }
+}

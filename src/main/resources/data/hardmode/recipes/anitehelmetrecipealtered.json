@@ -1,0 +1,29 @@
+{
+  "group": "hardmode",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "hardmode:anitegem"
+    },
+    "1": {
+      "item": "hardmode:anitegem"
+    },
+    "2": {
+      "item": "hardmode:anitegem"
+    },
+    "3": {
+      "item": "hardmode:anitegem"
+    },
+    "5": {
+      "item": "hardmode:anitegem"
+    }
+  },
+  "result": {
+    "item": "hardmode:anitehelmet",
+    "count": 1
+  }
+}
