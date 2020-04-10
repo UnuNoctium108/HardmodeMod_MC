@@ -37,6 +37,7 @@ public class BriteShovelRightClickedOnBlockProcedure extends HardmodeElements.Mo
 		double xC = 0;
 		double zC = 0;
 		double yC = 0;
+		double tries = 0;
 		while (((!((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.AIR)) && (((world
 				.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.EARTH)
 				&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.ORGANIC) && (((world
@@ -44,11 +45,12 @@ public class BriteShovelRightClickedOnBlockProcedure extends HardmodeElements.Mo
 						&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.TALL_PLANTS)
 								&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.SAND)
 										&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.SNOW)
-												&& ((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC))))
-														.getMaterial() == Material.CLAY))))))))) {
+												&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC))))
+														.getMaterial() == Material.CLAY) && ((tries) <= 128)))))))))) {
 			xC = (double) (x + (Math.round((2 * Math.random())) - 1));
 			yC = (double) (y + (Math.round((2 * Math.random())) - 1));
 			zC = (double) (z + (Math.round((2 * Math.random())) - 1));
+			tries = (double) ((tries) + 1);
 		}
 		Block.spawnDrops(world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC))), world,
 				new BlockPos((int) (xC), (int) (yC), (int) (zC)));
