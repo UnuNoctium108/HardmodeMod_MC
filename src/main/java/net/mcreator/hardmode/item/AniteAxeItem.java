@@ -33,7 +33,7 @@ public class AniteAxeItem extends HardmodeElements.ModElement {
 			}
 
 			public float getEfficiency() {
-				return 4f;
+				return 24f;
 			}
 
 			public float getAttackDamage() {
