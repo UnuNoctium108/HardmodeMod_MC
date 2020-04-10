@@ -379,6 +379,104 @@
         "eb": false,
         "ec": false
       }
+    },
+    {
+      "name": "BriteGemRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BriteGemItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BriteGem",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BriteOre",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Brite",
+      "type": "armor",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": true,
+        "ec": false
+      }
+    },
+    {
+      "name": "BriteBootsTickEvent",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -392,25 +490,31 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.hardmode.britegem": "Brite Gem",
+      "item.minecraft.splash_potion.effect.emelitepotion": "Splash Potion of Emelite",
+      "item.hardmode.britebody": "Brite Body",
+      "item.minecraft.potion.effect.emelitepotion": "Potion of Emelite",
+      "item.hardmode.britelegs": "Brite Leggings",
+      "block.hardmode.emeliteore": "Emelite Ore",
+      "item.hardmode.anitehelmet": "Anite Helmet",
+      "block.hardmode.briteore": "Brite Ore",
+      "item.hardmode.britehelmet": "Brite Helmet",
+      "item.minecraft.tipped_arrow.effect.emelitepotion": "Arrow of Potion of Emelite",
+      "item.hardmode.aniteboots": "Anite Boots",
+      "effect.emelitepotion": "Emeliting",
       "item.hardmode.anitesword": "Anite Sword",
+      "item.hardmode.briteboots": "Brite Boots",
       "item.hardmode.anitepickaxe": "Anite Pickaxe",
       "item.minecraft.lingering_potion.effect.emelitepotion": "Lingering Potion of Emelite",
       "item.hardmode.emelitesword": "Emelite Sword",
-      "item.minecraft.splash_potion.effect.emelitepotion": "Splash Potion of Emelite",
       "item.hardmode.aniteaxe": "Anite Axe",
       "item.hardmode.anitegem": "Anite",
-      "item.minecraft.potion.effect.emelitepotion": "Potion of Emelite",
-      "block.hardmode.emeliteore": "Emelite Ore",
       "item.hardmode.emelitegem": "Emelite",
       "block.hardmode.misteriousrock": "Misterious Rock",
       "item.hardmode.emelitepickaxe": "Emelite Pickaxe",
       "item.hardmode.emeliteaxe": "Emelite Axe",
       "item.hardmode.anitelegs": "Anite Leggings",
       "block.hardmode.aniteore": "Anite Ore",
-      "item.hardmode.anitehelmet": "Anite Helmet",
-      "item.minecraft.tipped_arrow.effect.emelitepotion": "Arrow of Potion of Emelite",
-      "item.hardmode.aniteboots": "Anite Boots",
-      "effect.emelitepotion": "Emeliting",
       "item.hardmode.anitebody": "Anite Body"
     }
   },

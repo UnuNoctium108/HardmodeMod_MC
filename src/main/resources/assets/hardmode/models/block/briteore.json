@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hardmode:blocks/briteore",
+    "up": "hardmode:blocks/briteore",
+    "north": "hardmode:blocks/briteore",
+    "east": "hardmode:blocks/briteore",
+    "south": "hardmode:blocks/briteore",
+    "west": "hardmode:blocks/briteore",
+    "particle": "hardmode:blocks/briteore"
+  }
+}
