@@ -8,6 +8,8 @@ import net.minecraft.block.Block;
 import net.mcreator.hardmode.item.BriteShovelItem;
 import net.mcreator.hardmode.HardmodeElements;
 
+import java.util.Random;
+
 @HardmodeElements.ModElement.Tag
 public class BriteShovelRightClickedOnBlockProcedure extends HardmodeElements.ModElement {
 	public BriteShovelRightClickedOnBlockProcedure(HardmodeElements instance) {
@@ -27,6 +29,10 @@ public class BriteShovelRightClickedOnBlockProcedure extends HardmodeElements.Mo
 			System.err.println("Failed to load dependency z for procedure BriteShovelRightClickedOnBlock!");
 			return;
 		}
+		if (dependencies.get("itemstack") == null) {
+			System.err.println("Failed to load dependency itemstack for procedure BriteShovelRightClickedOnBlock!");
+			return;
+		}
 		if (dependencies.get("world") == null) {
 			System.err.println("Failed to load dependency world for procedure BriteShovelRightClickedOnBlock!");
 			return;
@@ -34,6 +40,7 @@ public class BriteShovelRightClickedOnBlockProcedure extends HardmodeElements.Mo
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
+		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		World world = (World) dependencies.get("world");
 		double xC = 0;
 		double zC = 0;
@@ -52,5 +59,9 @@ public class BriteShovelRightClickedOnBlockProcedure extends HardmodeElements.Mo
 		Block.spawnDrops(world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC))), world,
 				new BlockPos((int) (xC), (int) (yC), (int) (zC)));
 		world.destroyBlock(new BlockPos((int) (xC), (int) (yC), (int) (zC)), false);
+		if (itemstack.attemptDamageItem((int) 2, new Random(), null)) {
+			itemstack.shrink(1);
+			itemstack.setDamage(0);
+		}
 	}
 }

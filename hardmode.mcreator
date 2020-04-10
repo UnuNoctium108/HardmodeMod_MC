@@ -528,6 +528,10 @@
             "type": "int"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "world",
             "type": "world"
           }

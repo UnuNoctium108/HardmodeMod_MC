@@ -70,6 +70,7 @@ public class BriteShovelItem extends HardmodeElements.ModElement {
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					BriteShovelRightClickedOnBlockProcedure.executeProcedure($_dependencies);
 				}
