@@ -38,6 +38,9 @@ public class BriteShovelRightClickedOnBlockProcedure extends HardmodeElements.Mo
 		double zC = 0;
 		double yC = 0;
 		double tries = 0;
+		xC = (double) (x + (Math.round((2 * Math.random())) - 1));
+		yC = (double) (y + (Math.round((2 * Math.random())) - 1));
+		zC = (double) (z + (Math.round((2 * Math.random())) - 1));
 		while (((!((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.AIR)) && (((world
 				.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.EARTH)
 				&& (((world.getBlockState(new BlockPos((int) (xC), (int) (yC), (int) (zC)))).getMaterial() == Material.ORGANIC) && (((world
