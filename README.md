@@ -4,4 +4,4 @@ This mod adds a Hardmode section to the game, making it harder. (yes)
 
 ***
 
-YES
+This source code is made for, and edited with MCreator
