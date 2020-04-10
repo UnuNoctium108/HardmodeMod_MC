@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "hardmode:emeliteore"
+    "hardmode:emeliteore",
+    "hardmode:aniteore",
+    "hardmode:briteore"
   ]
 }

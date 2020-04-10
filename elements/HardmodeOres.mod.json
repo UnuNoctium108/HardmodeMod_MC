@@ -7,6 +7,12 @@
     "blocks": [
       {
         "value": "CUSTOM:EmeliteOre"
+      },
+      {
+        "value": "CUSTOM:AniteOre"
+      },
+      {
+        "value": "CUSTOM:BriteOre"
       }
     ],
     "functions": [],
