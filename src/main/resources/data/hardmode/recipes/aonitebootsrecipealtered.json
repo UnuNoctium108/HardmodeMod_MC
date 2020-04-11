@@ -1,0 +1,26 @@
+{
+  "group": "hardmode",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "hardmode:aonite"
+    },
+    "2": {
+      "item": "hardmode:aonite"
+    },
+    "3": {
+      "item": "hardmode:aonite"
+    },
+    "5": {
+      "item": "hardmode:aonite"
+    }
+  },
+  "result": {
+    "item": "hardmode:aonitearmorboots",
+    "count": 1
+  }
+}

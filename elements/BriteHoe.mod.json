@@ -22,6 +22,9 @@
       {
         "value": "CUSTOM:BriteGem"
       }
-    ]
+    ],
+    "onRightClickedInAir": {
+      "name": "BriteHoeRightClickedInAir"
+    }
   }
 }
