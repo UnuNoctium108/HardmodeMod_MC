@@ -13,6 +13,9 @@
     "onBodyTick": {
       "name": "AOniteArmorBodyTickEvent"
     },
+    "onBootsTick": {
+      "name": "AOniteArmorBodyTickEvent"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

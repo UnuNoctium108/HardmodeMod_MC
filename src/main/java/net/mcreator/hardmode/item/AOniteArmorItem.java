@@ -90,6 +90,18 @@ public class AOniteArmorItem extends HardmodeElements.ModElement {
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
 				return "hardmode:textures/models/armor/aonitearmor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
+
+			@Override
+			public void onArmorTick(ItemStack itemstack, World world, PlayerEntity entity) {
+				int x = (int) entity.posX;
+				int y = (int) entity.posY;
+				int z = (int) entity.posZ;
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
+					AOniteArmorBodyTickEventProcedure.executeProcedure($_dependencies);
+				}
+			}
 		}.setRegistryName("aonitearmorboots"));
 	}
 }

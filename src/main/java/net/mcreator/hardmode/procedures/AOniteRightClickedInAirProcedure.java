@@ -8,20 +8,18 @@ import net.minecraft.entity.Entity;
 import net.mcreator.hardmode.HardmodeElements;
 
 @HardmodeElements.ModElement.Tag
-public class AOniteArmorBodyTickEventProcedure extends HardmodeElements.ModElement {
-	public AOniteArmorBodyTickEventProcedure(HardmodeElements instance) {
-		super(instance, 42);
+public class AOniteRightClickedInAirProcedure extends HardmodeElements.ModElement {
+	public AOniteRightClickedInAirProcedure(HardmodeElements instance) {
+		super(instance, 48);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure AOniteArmorBodyTickEvent!");
+			System.err.println("Failed to load dependency entity for procedure AOniteRightClickedInAir!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 12, (int) 3));
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, (int) 12, (int) 1));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HASTE, (int) 12, (int) 2));
 	}
 }

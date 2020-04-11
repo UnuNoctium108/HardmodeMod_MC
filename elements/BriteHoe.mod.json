@@ -23,7 +23,7 @@
         "value": "CUSTOM:BriteGem"
       }
     ],
-    "onRightClickedInAir": {
+    "onRightClickedOnBlock": {
       "name": "BriteHoeRightClickedInAir"
     }
   }
