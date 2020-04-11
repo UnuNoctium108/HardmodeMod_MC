@@ -54,6 +54,21 @@
       },
       {
         "value": "CUSTOM:BriteHoe"
+      },
+      {
+        "value": "CUSTOM:AOnite"
+      },
+      {
+        "value": "CUSTOM:AOniteBlock"
+      },
+      {
+        "value": "CUSTOM:AOniteSword"
+      },
+      {
+        "value": "CUSTOM:AOniteArmor.body"
+      },
+      {
+        "value": "CUSTOM:AOniteArmor.boots"
       }
     ],
     "blocks": [],
