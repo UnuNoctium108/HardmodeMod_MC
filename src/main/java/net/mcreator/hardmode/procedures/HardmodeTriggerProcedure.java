@@ -61,7 +61,7 @@ public class HardmodeTriggerProcedure extends HardmodeElements.ModElement {
 			if (!world.isRemote && world.getServer() != null) {
 				world.getServer().getCommandManager().handleCommand(new CommandSource(ICommandSource.field_213139_a_, new Vec3d(x, y, z), Vec2f.ZERO,
 						(ServerWorld) world, 4, "", new StringTextComponent(""), world.getServer(), null).withFeedbackDisabled(),
-						"hardmode status set true");
+						"/hardmode status set true");
 			}
 			{
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
