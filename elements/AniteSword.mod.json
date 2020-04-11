@@ -18,6 +18,9 @@
     "usageCount": 7436,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": []
+    "repairItems": [],
+    "onEntityHitWith": {
+      "name": "AnitePickaxeBlockDestroyedWithTool"
+    }
   }
 }
