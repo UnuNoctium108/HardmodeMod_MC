@@ -59,9 +59,6 @@
         "value": "CUSTOM:AOnite"
       },
       {
-        "value": "CUSTOM:AOniteBlock"
-      },
-      {
         "value": "CUSTOM:AOniteSword"
       },
       {
@@ -69,6 +66,9 @@
       },
       {
         "value": "CUSTOM:AOniteArmor.boots"
+      },
+      {
+        "value": "CUSTOM:AOniteBlock"
       }
     ],
     "blocks": [],
